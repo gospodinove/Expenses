@@ -65,4 +65,8 @@ class ParentViewController: UIViewController, Identifiable {
             animations()
         }
     }
+    
+    func updateAppearance() {
+        
+    }
 }

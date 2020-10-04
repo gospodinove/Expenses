@@ -3,6 +3,8 @@
 ### Xcode ###
 build
 *.xcodeproj/*
+*.xcworkspace/*
+*xcuserdata/*
 !*.xcodeproj/project.pbxproj
 !*.xcworkspace/contents.xcworkspacedata
 

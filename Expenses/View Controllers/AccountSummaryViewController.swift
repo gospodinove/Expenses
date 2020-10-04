@@ -45,6 +45,14 @@ final class AccountSummaryViewController: ParentViewController {
         updateAppearance()
     }
     
+    override func updateAppearance() {
+        balanceLabel.textColor = UIColor.white.withAlphaComponent(0.5)
+        balanceValueLabel.textColor = .white
+        
+        view.backgroundColor = .mainColor
+        collectionView.backgroundColor = .mainColor
+    }
+    
     // MARK: - Private
     private func configureLabels() {
         balanceValueLabel.font = .largeBold
@@ -62,14 +70,6 @@ final class AccountSummaryViewController: ParentViewController {
         }
         
         collectionView.showsHorizontalScrollIndicator = false
-    }
-    
-    private func updateAppearance() {
-        balanceLabel.textColor = UIColor.white.withAlphaComponent(0.5)
-        balanceValueLabel.textColor = .white
-        
-        view.backgroundColor = .mainColor
-        collectionView.backgroundColor = .mainColor
     }
     
     // MARK: - Public

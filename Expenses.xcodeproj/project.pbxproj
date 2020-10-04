@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		387F7C6A251260C300C1CB3D /* UIImage+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387F7C69251260C300C1CB3D /* UIImage+Helper.swift */; };
+		3888C49B2524D08D00672BEE /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3888C49A2524D08D00672BEE /* TableHeaderView.swift */; };
+		3888C49E2524D0B700672BEE /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3888C49D2524D0B700672BEE /* TableHeaderView.xib */; };
 		38DD1060250D5B9800D5EB76 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD105F250D5B9800D5EB76 /* ParentViewController.swift */; };
 		38DD1063250D5C0300D5EB76 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD1062250D5C0300D5EB76 /* DashboardViewController.swift */; };
 		38DD1066250D5C5900D5EB76 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD1065250D5C5900D5EB76 /* Identifiable.swift */; };
@@ -35,6 +37,8 @@
 /* Begin PBXFileReference section */
 		275BE78FBD6767817A20373A /* Pods_Expenses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Expenses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		387F7C69251260C300C1CB3D /* UIImage+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Helper.swift"; sourceTree = "<group>"; };
+		3888C49A2524D08D00672BEE /* TableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHeaderView.swift; sourceTree = "<group>"; };
+		3888C49D2524D0B700672BEE /* TableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableHeaderView.xib; sourceTree = "<group>"; };
 		38DD105F250D5B9800D5EB76 /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		38DD1062250D5C0300D5EB76 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		38DD1065250D5C5900D5EB76 /* Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 			children = (
 				38DD107A250E6FBD00D5EB76 /* AccountSummaryItemCollectionViewCell.swift */,
 				38DD107C250E703E00D5EB76 /* AccountSummaryItemCollectionViewCell.xib */,
+				3888C49A2524D08D00672BEE /* TableHeaderView.swift */,
+				3888C49D2524D0B700672BEE /* TableHeaderView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3888C49E2524D0B700672BEE /* TableHeaderView.xib in Resources */,
 				38DD107D250E703E00D5EB76 /* AccountSummaryItemCollectionViewCell.xib in Resources */,
 				38F49B78250D331C0051B036 /* LaunchScreen.storyboard in Resources */,
 				38F49B80250D334A0051B036 /* GoogleService-Info.plist in Resources */,
@@ -305,6 +312,7 @@
 				38DD1063250D5C0300D5EB76 /* DashboardViewController.swift in Sources */,
 				38DD107B250E6FBD00D5EB76 /* AccountSummaryItemCollectionViewCell.swift in Sources */,
 				38DD1078250E5FC700D5EB76 /* UIFont+CustomFonts.swift in Sources */,
+				3888C49B2524D08D00672BEE /* TableHeaderView.swift in Sources */,
 				38DD1072250D67E600D5EB76 /* UIViewController+Helper.swift in Sources */,
 				38DD106A250D5D2400D5EB76 /* ParentTableViewController.swift in Sources */,
 				387F7C6A251260C300C1CB3D /* UIImage+Helper.swift in Sources */,

@@ -9,11 +9,16 @@
 import UIKit
 import SwiftIcons
 
-final class DashboardViewController: ParentViewController {
+final class DashboardViewController: ParentTableViewController {
     
-    @IBOutlet private weak var tableView: UITableView!
+    override var headerView: TableHeaderView? { .overlapping(view: headerViewContainer) }
     
     private lazy var topMenuViewController = AccountSummaryViewController()
+    private lazy var headerViewContainer: UIView = {
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 300))
+        addChild(topMenuViewController, fullScreenInView: headerView)
+        return headerView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,15 +41,26 @@ final class DashboardViewController: ParentViewController {
         navigationController?.isNavigationBarHidden = true
     }
     
-    // MARK: - Private
-    private func configureTableView() {
-        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 300))
-        addChild(topMenuViewController, fullScreenInView: headerView)
-        tableView.tableHeaderView = headerView
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
     }
     
-    private func updateAppearance() {
-        view.backgroundColor = .mainColor
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        super.scrollViewDidScroll(scrollView)
+        
+//        navigationController?.isNavigationBarHidden = tableView.contentOffset.y == 0
+    }
+    
+    override func updateAppearance() {
         statusBarBackgroundColor = .mainColor
+    }
+    
+    // MARK: - Private
+    override func configureTableView() {
+        super.configureTableView()
     }
 }
